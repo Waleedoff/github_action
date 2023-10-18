@@ -1,0 +1,26 @@
+name: Python Action
+
+on:
+  push:
+    branches:
+      - main  # Change this to your main branch name
+
+jobs:
+  run-python-script:
+    runs-on: ubuntu-latest
+
+    steps:
+ 
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x  # Choose the Python version you want to use
+
+
+    - name: Change working directory
+        run: https://github.com/Waleedoff/github_action
+
+
+
+    - name: Run py script
+      run: python3 main.py  # Replace 'main.py' with the name of your Python script
